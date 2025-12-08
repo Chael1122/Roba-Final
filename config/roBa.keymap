@@ -125,7 +125,7 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE  &kp LC(W)  &trans     &trans     &trans                                 &trans         &kp HOME        &kp UP_ARROW    &kp END          &kp RC(P)
+&kp ESCAPE  &kp LC(W)  &trans     &trans     &trans                                 &kp RC(Y)      &kp HOME        &kp UP_ARROW    &kp END          &kp RC(P)
 &kp LC(A)   &kp LC(S)  &trans     &kp LC(F)  &kp LEFT_SHIFT  &trans         &kp F6  &kp F2         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
 &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(LS(V))   &kp LC(B)      &kp F5  &kp F11        &trans          &trans          &trans           &trans
 &trans      &trans     &trans     &trans     &trans          &trans         &trans  &kp RC(ENTER)                                                   &trans
