@@ -92,10 +92,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &lt 4 E       &kp R                   &kp T                                                        &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&lt 1 A           &kp S         &kp D         &kp F                   &kp G        &kp LS(LG(S))                   &kp UNDERSCORE  &kp H        &kp J  &kp K      &kp L    &lt 4 MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &lt_to_layer_0 6 BACKSPACE      &kp COLON       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 4 GRAVE  &lt 3 SPACE  &lt_to_layer_0 2 TAB            &kp BACKSPACE   &lt 2 ENTER                             &kp ESC
+&kp Q             &kp W         &lt 4 E       &kp R                   &kp T                                                  &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&lt 1 A           &kp S         &kp D         &kp F                   &kp G        &kp LS(LG(S))             &kp UNDERSCORE  &kp H        &kp J  &kp K      &kp L    &lt 4 MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp BACKSPACE             &kp COLON       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 4 GRAVE  &lt 3 SPACE  &lt_to_layer_0 2 TAB      &kp BACKSPACE   &lt 2 ENTER                             &lt 6 ESC
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -161,6 +161,8 @@
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_UP>;
         };
     };
 };
