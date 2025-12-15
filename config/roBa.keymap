@@ -95,7 +95,7 @@
 &kp Q             &kp W         &lt 4 E             &kp R                   &kp T                                                  &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &lt 1 A           &kp S         &kp D               &kp F                   &kp G        &kp LS(LG(S))             &kp UNDERSCORE  &kp H        &kp J  &kp K      &kp L    &lt 4 MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C               &kp V                   &kp B        &kp BACKSPACE             &kp COLON       &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &lt_to_layer_0 4 RCTRL  &lt 3 SPACE  &lt_to_layer_0 2 TAB      &kp BACKSPACE   &lt 2 ENTER                             &lt 6 ESC
+&kp LSHIFT        &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &lt_to_layer_0 4 RCTRL  &lt 3 SPACE  &lt_to_layer_0 2 TAB      &kp BACKSPACE   &lt 2 ENTER                             &lt 6 ESC
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -136,7 +136,7 @@
 
         MOUSE {
             bindings = <
-&kp ESCAPE  &kp LC(W)       &kp UP_ARROW    &trans                  &kp LC(T)                                            &trans  &kp LC(LS(TAB))  &kp RETURN  &kp RC(TAB)  &trans
+&kp ESCAPE  &kp HOME        &kp UP_ARROW    &kp END                 &kp LC(T)                                            &trans  &kp LC(LS(TAB))  &kp RETURN  &kp RC(TAB)  &trans
 &kp LC(A)   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW         &kp LEFT_SHIFT  &trans                       &trans  &trans  &mkp MB1         &mkp MB3    &mkp MB2     &trans
 &kp LC(Z)   &kp LC(X)       &kp LC(C)       &kp LC(V)               &kp LC(LS(V))   &kp LC(B)                    &trans  &trans  &mkp MB4         &trans      &mkp MB5     &trans
 &trans      &trans          &trans          &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)     &kp LG(LC(RIGHT_ARROW))      &trans  &trans                                            &trans
