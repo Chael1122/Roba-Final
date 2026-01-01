@@ -92,7 +92,7 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &lt 4 E             &kp R                   &kp T                                           &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp Q             &lt 3 W       &lt 4 E             &lt 5 R                 &kp T                                           &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &mt LEFT_SHIFT A  &kp S         &kp D               &kp F                   &kp G      &kp LS(LG(S))        &kp UNDERSCORE  &kp H        &kp J  &kp K      &kp L    &mt RIGHT_SHIFT MINUS
 &kp Z             &kp X         &kp C               &kp V                   &kp B      &lt 6 BACKSPACE      &kp COLON       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &lt_to_layer_0 4 SPACE  &lt 2 TAB  &lt 3 LC(ENTER)      &kp BACKSPACE   &lt 2 ENTER                             &kp RCTRL
@@ -139,7 +139,7 @@
 &kp ESCAPE  &kp LC(W)       &kp UP_ARROW    &kp LC(F)               &kp LC(T)                                              &kp RC(Y)  &kp LC(LS(TAB))  &kp RETURN     &kp RC(TAB)  &kp RC(P)
 &kp LC(A)   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW         &kp LEFT_SHIFT  &trans                       &kp F6    &kp F2     &mkp MB1         &mkp MB3       &mkp MB2     &kp PAGE_UP
 &kp LC(Z)   &kp LC(X)       &kp LC(C)       &kp LC(V)               &kp LC(LS(V))   &kp LC(B)                    &kp F5    &kp F11    &mkp MB4         &kp RC(ENTER)  &mkp MB5     &kp PAGE_DOWN
-&trans      &trans          &kp LC(E)       &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)     &kp LG(LC(RIGHT_ARROW))      &kp HOME  &kp END                                                 &trans
+&trans      &trans          &kp LG(TAB)     &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)     &kp LG(LC(RIGHT_ARROW))      &kp HOME  &kp END                                                 &kp RG(RS(S))
             >;
 
             sensor-bindings = <&scroll_up_down>;
