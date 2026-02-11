@@ -93,6 +93,29 @@
 
             tap-ms = <20>;
         };
+
+        zoom_encoder: behavior_sensor_rotate_zoom {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&ib_ctrl_scrl_up>, <&ib_ctrl_scrl_down>;
+            tap-ms = <20>;
+        };
+
+        ib_ctrl_scrl_up: ib_ctrl_scrl_up {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_UP>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+
+        ib_ctrl_scrl_down: ib_ctrl_scrl_down {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_DOWN>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
     };
 
     keymap {
@@ -139,7 +162,7 @@
 &trans      &trans     &trans     &trans     &trans          &trans         &trans  &kp RC(ENTER)                                                   &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&zoom_encoder>;
         };
 
         MOUSE {
