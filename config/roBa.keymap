@@ -90,6 +90,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
+
             tap-ms = <20>;
         };
     };
@@ -143,10 +144,10 @@
 
         MOUSE {
             bindings = <
-&kp ESCAPE        &kp LC(W)       &kp UP_ARROW    &kp LC(F)               &kp LC(T)                                              &kp RC(Y)  &kp LC(LS(TAB))  &kp LA(TAB)    &kp RC(TAB)  &kp RC(P)
-&kp LC(A)         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW         &kp LEFT_SHIFT  &trans                       &kp F6    &kp F2     &mkp MB1         &mkp MB3       &mkp MB2     &kp PAGE_UP
-&kp LC(Z)         &kp LC(X)       &kp LC(C)       &kp LC(V)               &kp LC(LS(V))   &kp LC(B)                    &kp F5    &kp F11    &mkp MB4         &kp RC(ENTER)  &mkp MB5     &kp PAGE_DOWN
-&kp LEFT_CONTROL  &trans          &trans          &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)     &kp LG(LC(RIGHT_ARROW))      &kp HOME  &kp END                                                 &kp RG(RS(S))
+&kp ESCAPE  &kp LC(W)       &kp UP_ARROW    &kp LC(F)               &kp LC(T)                                              &kp RC(Y)  &kp LC(LS(TAB))  &kp LA(TAB)    &kp RC(TAB)  &kp RC(P)
+&kp LC(A)   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW         &kp LEFT_SHIFT  &trans                       &kp F6    &kp F2     &mkp MB1         &mkp MB3       &mkp MB2     &kp PAGE_UP
+&kp LC(Z)   &kp LC(X)       &kp LC(C)       &kp LC(V)               &kp LC(LS(V))   &kp LC(B)                    &kp F5    &kp F11    &mkp MB4         &kp RC(ENTER)  &mkp MB5     &kp PAGE_DOWN
+&trans      &trans          &trans          &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)     &kp LG(LC(RIGHT_ARROW))      &kp HOME  &kp END                                                 &kp RG(RS(S))
             >;
 
             sensor-bindings = <&scroll_up_down>;
