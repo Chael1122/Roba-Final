@@ -97,11 +97,11 @@
         zoom_encoder: behavior_sensor_rotate_zoom {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&ib_ctrl_scrl_up>, <&ib_ctrl_scrl_down>;
+            bindings = <&zoom_in>, <&zoom_out>;
             tap-ms = <20>;
         };
 
-        ib_ctrl_scrl_up: ib_ctrl_scrl_up {
+        zoom_in: zoom_in {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_UP>;
@@ -109,7 +109,7 @@
             keep-mods = <(MOD_LCTL)>;
         };
 
-        ib_ctrl_scrl_down: ib_ctrl_scrl_down {
+        zoom_out: zoom_out {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_DOWN>;
