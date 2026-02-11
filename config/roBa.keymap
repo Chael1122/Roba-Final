@@ -93,32 +93,6 @@
 
             tap-ms = <20>;
         };
-
-        zoom_encoder: behavior_sensor_rotate_zoom {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&zoom_in>, <&zoom_out>;
-
-            tap-ms = <20>;
-        };
-
-        zoom_in: zoom_in {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_UP>;
-
-            mods = <(MOD_LCTL)>;
-            keep-mods = <(MOD_LCTL)>;
-        };
-
-        zoom_out: zoom_out {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_DOWN>;
-
-            mods = <(MOD_LCTL)>;
-            keep-mods = <(MOD_LCTL)>;
-        };
     };
 
     keymap {
@@ -154,7 +128,7 @@
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
             >;
 
-            sensor-bindings = <&zoom_encoder>;
+            sensor-bindings = <&volume_encoder>;
         };
 
         ARROW {
@@ -165,7 +139,7 @@
 &trans      &trans     &trans     &trans     &trans          &trans         &trans  &kp RC(ENTER)                                                   &trans
             >;
 
-            sensor-bindings = <&volume_encoder>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
