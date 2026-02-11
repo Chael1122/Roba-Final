@@ -94,13 +94,14 @@
             tap-ms = <20>;
         };
 
-        vdesk_encoder: behavior_sensor_rotate_vdesk {
+        seek_encoder: behavior_sensor_rotate_seek {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&kp LC(LG(LEFT))>, <&kp LC(LG(RIGHT))>;
-
+            bindings = <&kp RIGHT>, <&kp LEFT>;
+            
             tap-ms = <20>;
         };
+
     };
 
     keymap {
@@ -136,7 +137,7 @@
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
             >;
 
-            sensor-bindings = <&vdesk_encoder>;
+            sensor-bindings = <&seek_encoder>;
         };
 
         ARROW {
