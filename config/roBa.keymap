@@ -133,7 +133,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&volume_encoder>;
         };
 
         NUM {
@@ -144,7 +144,7 @@
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
             >;
 
-            sensor-bindings = <&volume_encoder>;
+            sensor-bindings = <&seek_encoder>;
         };
 
         ARROW {
@@ -155,7 +155,7 @@
 &trans      &trans     &trans     &trans     &trans          &trans         &trans  &kp RC(ENTER)                                                   &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&brightness_encoder>;
         };
 
         MOUSE {
@@ -177,7 +177,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&seek_encoder>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_6 {
@@ -188,7 +188,7 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
 
-            sensor-bindings = <&brightness_encoder>;
+            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
