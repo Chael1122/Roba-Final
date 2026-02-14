@@ -94,14 +94,6 @@
             tap-ms = <20>;
         };
 
-        brightness_encoder: behavior_sensor_rotate_brightness {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp C_BRI_UP>, <&kp C_BRI_DN>;
-            
-            tap-ms = <20>;
-        };
-
         seek_encoder: behavior_sensor_rotate_seek {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -155,7 +147,7 @@
 &trans      &trans     &trans     &trans     &trans          &trans         &trans  &kp RC(ENTER)                                                   &trans
             >;
 
-            sensor-bindings = <&brightness_encoder>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
