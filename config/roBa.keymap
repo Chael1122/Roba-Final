@@ -169,7 +169,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <seek_encoder>;
+            sensor-bindings = <&seek_encoder>;
         };
 
         layer_6 {
