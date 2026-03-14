@@ -1,9 +1,9 @@
 on: [push, pull_request, workflow_dispatch]
 
+# ジョブの外（トップレベル）に記述することで、すべてのジョブに適用されます
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
-    # 呼び出し側のジョブ全体に環境変数を適用
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-    # ZMKの共通設定ファイルを呼び出す
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
