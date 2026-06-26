@@ -160,10 +160,10 @@
 
         MOUSE {
             bindings = <
-&kp ESCAPE  &kp LC(W)       &kp UP_ARROW    &kp LC(F)        &kp LC(T)                                  &kp RC(RS(T))  &kp LG(LC(LEFT_ARROW))  &kp LA(ESCAPE)  &kp RG(RC(RIGHT_ARROW))  &kp RC(P)
-&kp LC(A)   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_SHIFT  &trans           &kp F6    &kp F2         &mkp MB1                &mkp MB3        &mkp MB2                 &kp RC(TAB)
-&kp LC(Z)   &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp LC(LS(V))   &kp LC(B)        &kp F5    &kp F11        &mkp MB4                &kp RC(ENTER)   &mkp MB5                 &kp LC(LS(TAB))
-&kp LC(Y)   &trans          &trans          &trans           &kp LG(TAB)     &kp LA(TAB)      &kp HOME  &kp END                                                                         &kp RG(RS(S))
+&kp ESCAPE  &kp LC(W)       &kp UP_ARROW    &kp LC(F)        &kp LC(T)                                &kp LA(LEFT_ARROW)  &kp LG(LC(LEFT_ARROW))  &kp LA(TAB)    &kp RG(RC(RIGHT_ARROW))  &kp LA(RIGHT)
+&kp LC(A)   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_SHIFT  &trans         &kp F6    &kp F2              &mkp MB1                &mkp MB3       &mkp MB2                 &kp RC(TAB)
+&kp LC(Z)   &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp LC(LS(V))   &kp LC(B)      &kp F5    &kp F11             &mkp MB4                &kp RC(ENTER)  &mkp MB5                 &kp LC(LS(TAB))
+&kp LC(Y)   &trans          &trans          &trans           &kp LG(TAB)     &kp LC(P)      &kp HOME  &kp END                                                                             &kp RG(RS(S))
             >;
 
             sensor-bindings = <&scroll_up_down>;
